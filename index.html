@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- CABEÇALHO -->
@@ -26,12 +27,15 @@
             <span>WEB DEVELOPER</span>
         </a>
 
-        <button class="menu-toggle" id="menu-toggle"
-            aria-label="Abrir menu" aria-expanded="false">
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false">
             ☰
         </button>
 
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" aria-label="Menu principal">
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
@@ -76,7 +80,9 @@
             <div class="hero-decoration">
                 <span class="decoration-number">01</span>
                 <span class="decoration-line"></span>
-                <span class="decoration-text">CRIATIVIDADE & TECNOLOGIA</span>
+                <span class="decoration-text">
+                    CRIATIVIDADE & TECNOLOGIA
+                </span>
             </div>
         </section>
 
@@ -117,10 +123,13 @@
             <div class="section-heading">
                 <span class="section-label">02 / SERVIÇOS</span>
                 <h2>O que posso desenvolver.</h2>
-                <p>Projetos pensados para apresentar seu negócio na internet.</p>
+                <p>
+                    Projetos pensados para apresentar seu negócio na internet.
+                </p>
             </div>
 
             <div class="services-grid">
+
                 <article class="service-card">
                     <span class="service-number">01</span>
                     <h3>Sites institucionais</h3>
@@ -143,64 +152,95 @@
 
                 <article class="service-card">
                     <span class="service-number">03</span>
-                    <h3>Sites responsivos</h3>
+                    <h3>Sites interativos</h3>
                     <p>
-                        Experiências adaptadas para computadores,
-                        tablets e celulares.
+                        Interfaces responsivas com recursos como
+                        cardápios, formulários e solicitações de agendamento.
                     </p>
                     <span class="service-arrow">↗</span>
                 </article>
+
             </div>
         </section>
 
         <!-- PROJETOS -->
 
         <section class="section projects" id="projetos">
+
             <div class="section-heading">
                 <span class="section-label">03 / PORTFÓLIO</span>
                 <h2>Projetos em destaque.</h2>
-                <p>Conheça alguns dos meus projetos de desenvolvimento web.</p>
+                <p>
+                    Conheça alguns dos meus projetos demonstrativos
+                    de desenvolvimento web.
+                </p>
             </div>
 
             <div class="projects-grid">
 
+                <!-- PROJETO 01 - BARBEARIA -->
+
                 <article class="project-card">
                     <div class="project-visual barber">
                         <span class="project-category">PROJETO 01</span>
-                        <span class="project-brand">BARBEARIA<br>IMPERIAL</span>
-                        <span class="project-visual-footer">ESTÉTICA & IDENTIDADE</span>
+
+                        <span class="project-brand">
+                            BARBEARIA<br>IMPERIAL
+                        </span>
+
+                        <span class="project-visual-footer">
+                            ESTÉTICA & IDENTIDADE
+                        </span>
                     </div>
 
                     <div class="project-info">
                         <div>
-                            <span class="project-type">SITE INSTITUCIONAL</span>
+                            <span class="project-type">
+                                SITE INSTITUCIONAL
+                            </span>
+
                             <h3>Barbearia Imperial</h3>
+
                             <p>
                                 Projeto demonstrativo de um site para
-                                barbearia, com apresentação de serviços
-                                e identidade visual.
+                                barbearia, com apresentação de serviços,
+                                identidade visual premium e agendamento.
                             </p>
                         </div>
 
-                        <a href="https://luizpython780.github.io/barbearia-imperial/"
-                           target="_blank" rel="noopener noreferrer"
-                           class="project-link">
+                        <a
+                            href="https://luizpython780.github.io/barbearia-imperial/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
                             Visualizar projeto ↗
                         </a>
                     </div>
                 </article>
 
+                <!-- PROJETO 02 - PIZZARIA -->
+
                 <article class="project-card">
                     <div class="project-visual pizza">
                         <span class="project-category">PROJETO 02</span>
-                        <span class="project-brand">FORNO<br>& MASSA</span>
-                        <span class="project-visual-footer">SABOR & EXPERIÊNCIA</span>
+
+                        <span class="project-brand">
+                            FORNO<br>& MASSA
+                        </span>
+
+                        <span class="project-visual-footer">
+                            SABOR & EXPERIÊNCIA
+                        </span>
                     </div>
 
                     <div class="project-info">
                         <div>
-                            <span class="project-type">SITE COM CARDÁPIO</span>
+                            <span class="project-type">
+                                SITE COM CARDÁPIO INTERATIVO
+                            </span>
+
                             <h3>Forno & Massa</h3>
+
                             <p>
                                 Projeto demonstrativo de uma pizzaria,
                                 com cardápio interativo, carrinho e
@@ -208,9 +248,65 @@
                             </p>
                         </div>
 
-                        <a href="https://luizpython780.github.io/forno-e-massa/"
-                           target="_blank" rel="noopener noreferrer"
-                           class="project-link">
+                        <a
+                            href="https://luizpython780.github.io/forno-e-massa/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizar projeto ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJETO 03 - PULSEFIT -->
+
+                <article class="project-card">
+
+                    <div
+                        class="project-visual pulsefit"
+                        style="background:
+                            linear-gradient(
+                                90deg,
+                                rgba(0, 0, 0, 0.72),
+                                rgba(0, 0, 0, 0.28)
+                            ),
+                            url('imagens/pulsefit-essencial.png')
+                            center / cover no-repeat;">
+
+                        <span class="project-category">
+                            PROJETO 03
+                        </span>
+
+                        <span class="project-brand">
+                            PULSE<br>FIT.
+                        </span>
+
+                        <span class="project-visual-footer">
+                            PERFORMANCE & TECNOLOGIA
+                        </span>
+                    </div>
+
+                    <div class="project-info">
+                        <div>
+                            <span class="project-type">
+                                REACT • TYPESCRIPT • CSS
+                            </span>
+
+                            <h3>PulseFit Essencial</h3>
+
+                            <p>
+                                Site demonstrativo para academia,
+                                com apresentação de modalidades,
+                                planos interativos e formulário
+                                de solicitação de aula experimental.
+                            </p>
+                        </div>
+
+                        <a
+                            href="https://luizpython780.github.io/pulsefit-essencial/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
                             Visualizar projeto ↗
                         </a>
                     </div>
@@ -234,36 +330,43 @@
                 de desenvolvimento web.
             </p>
 
-            <a href="https://github.com/luizpython780"
-               target="_blank" rel="noopener noreferrer"
-               class="button-primary">
+            <a
+                href="https://github.com/luizpython780"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button-primary">
                 Conheça meu GitHub ↗
             </a>
         </section>
 
-<a href="#contato"
-   id="botao-whatsapp"
-   class="button-primary whatsapp-button"
-   target="_blank"
-   rel="noopener noreferrer">
-    Solicitar orçamento pelo WhatsApp ↗
-</a>
+        <a
+            href="#contato"
+            id="botao-whatsapp"
+            class="button-primary whatsapp-button">
+            Solicitar orçamento pelo WhatsApp ↗
+        </a>
 
     </main>
 
     <!-- RODAPÉ -->
 
     <footer class="footer">
+
         <a href="#inicio" class="logo">
             <span class="logo-symbol">D.</span>
             <span>WEB DEVELOPER</span>
         </a>
 
-        <p>© <span id="year"></span> Desenvolvedor Web Freelancer.</p>
+        <p>
+            © <span id="year"></span>
+            Desenvolvedor Web Freelancer.
+        </p>
 
         <a href="#inicio">Voltar ao início ↑</a>
+
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>

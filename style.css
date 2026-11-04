@@ -688,3 +688,16 @@ button {
     color: #101010;
     transform: translateY(-3px);
 }
+/* PROJETO PULSEFIT */
+
+.project-visual.pulsefit .project-brand {
+    color: #b5ff39;
+}
+
+.project-visual.pulsefit .project-visual-footer {
+    color: #ffffff;
+}
+
+.project-visual.pulsefit {
+    background-color: #101510;
+}
