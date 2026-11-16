@@ -1,27 +1,28 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta
         name="description"
-        content="Desenvolvedor Web Freelancer. Criação de sites modernos, profissionais e responsivos para empresas e pequenos negócios."
-    >
+        content="DevWeb - Criação de sites modernos, profissionais e responsivos para empresas e pequenos negócios."
+    />
 
-    <title>Desenvolvedor Web Freelancer | Portfólio</title>
+    <title>DevWeb | Desenvolvimento Web Freelancer</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
-    >
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="personalizador.css" />
 </head>
 
 <body>
@@ -48,19 +49,26 @@
             ☰
         </button>
 
-        <nav
-            class="nav"
-            id="nav"
-            aria-label="Menu principal"
-        >
+        <nav class="nav" id="nav" aria-label="Menu principal">
+
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#projetos">Projetos</a>
+            <a href="#montar-site">Monte seu site</a>
 
-            <a href="#contato" class="nav-contact">
+            <!-- CONTATO DIRETO PELO WHATSAPP -->
+
+            <a
+                href="https://wa.me/5569993210765?text=Ol%C3%A1%21%20Conheci%20o%20portf%C3%B3lio%20da%20DevWeb%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-contact"
+                aria-label="Vamos conversar pelo WhatsApp"
+            >
                 Vamos conversar ↗
             </a>
+
         </nav>
 
     </header>
@@ -192,8 +200,8 @@
                 </h2>
 
                 <p>
-                    Projetos pensados para apresentar seu
-                    negócio na internet.
+                    Projetos pensados para apresentar
+                    seu negócio na internet.
                 </p>
 
             </div>
@@ -296,7 +304,7 @@
                         </span>
 
                         <span class="project-brand">
-                            BARBEARIA<br>IMPERIAL
+                            BARBEARIA<br />IMPERIAL
                         </span>
 
                         <span class="project-visual-footer">
@@ -350,7 +358,7 @@
                         </span>
 
                         <span class="project-brand">
-                            FORNO<br>& MASSA
+                            FORNO<br />& MASSA
                         </span>
 
                         <span class="project-visual-footer">
@@ -415,7 +423,7 @@
                         </span>
 
                         <span class="project-brand">
-                            PULSE<br>FIT.
+                            PULSE<br />FIT.
                         </span>
 
                         <span class="project-visual-footer">
@@ -486,7 +494,7 @@
                         </span>
 
                         <span class="project-brand">
-                            VÉRTICE<br>AUTO DETAIL
+                            VÉRTICE<br />AUTO DETAIL
                         </span>
 
                         <span class="project-visual-footer">
@@ -508,8 +516,8 @@
                             <p>
                                 Site demonstrativo de estética
                                 automotiva premium, com apresentação
-                                de serviços, pacotes, galeria
-                                de imagens e formulário interativo
+                                de serviços, pacotes, galeria de
+                                imagens e formulário interativo
                                 para solicitações de orçamento.
                             </p>
 
@@ -558,7 +566,7 @@
                         </span>
 
                         <span class="project-brand">
-                            ALTIVA<br>IMÓVEIS
+                            ALTIVA<br />IMÓVEIS
                         </span>
 
                         <span class="project-visual-footer">
@@ -581,9 +589,9 @@
                                 Site demonstrativo de imobiliária,
                                 com catálogo de imóveis fictícios,
                                 filtros interativos de busca,
-                                visualização de detalhes e
-                                formulário para geração de
-                                solicitações de informações.
+                                visualização de detalhes e formulário
+                                para geração de solicitações
+                                de informações.
                             </p>
 
                         </div>
@@ -606,13 +614,20 @@
         </section>
 
         <!-- ==========================================
+             PERSONALIZADOR
+
+             A seção 04 é criada automaticamente
+             pelo arquivo personalizador.js.
+        ========================================== -->
+
+        <!-- ==========================================
              CONTATO
         ========================================== -->
 
         <section class="contact" id="contato">
 
             <span class="section-label">
-                04 / CONTATO
+                05 / CONTATO
             </span>
 
             <h2>
@@ -621,28 +636,65 @@
             </h2>
 
             <p>
-                Estou aberto a conhecer novas ideias
-                e oportunidades de desenvolvimento web.
+                Tem alguma dúvida ou gostaria de criar
+                um site para seu negócio? Escolha a
+                melhor forma de entrar em contato.
             </p>
 
-            <a
-                href="https://github.com/luizpython780"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button-primary"
+            <!-- FORMAS DE CONTATO -->
+
+            <div
+                class="hero-buttons"
+                style="justify-content: center;"
             >
-                Conheça meu GitHub ↗
-            </a>
+
+                <!-- ORÇAMENTO PERSONALIZADO -->
+
+                <a
+                    href="#montar-site"
+                    class="button-primary"
+                >
+                    Solicitar orçamento ↗
+                </a>
+
+                <!-- WHATSAPP DIRETO -->
+
+                <a
+                    href="https://wa.me/5569993210765?text=Ol%C3%A1%21%20Conheci%20o%20portf%C3%B3lio%20da%20DevWeb%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button-secondary"
+                >
+                    Conversar pelo WhatsApp ↗
+                </a>
+
+                <!-- E-MAIL -->
+
+                <a
+                    href="mailto:contato.webfreelancer.ro@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio%20DevWeb"
+                    class="button-secondary"
+                >
+                    Enviar e-mail ↗
+                </a>
+
+            </div>
+
+            <!-- GITHUB -->
+
+            <p style="margin: 30px auto 0;">
+
+                <a
+                    href="https://github.com/luizpython780"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    Conheça meu GitHub ↗
+                </a>
+
+            </p>
 
         </section>
-
-        <a
-            href="#contato"
-            id="botao-whatsapp"
-            class="button-primary whatsapp-button"
-        >
-            Solicitar orçamento pelo WhatsApp ↗
-        </a>
 
     </main>
 
@@ -652,23 +704,96 @@
 
     <footer class="footer">
 
+        <!-- LOGOTIPO -->
+
         <a href="#inicio" class="logo">
+
             <span class="logo-symbol">D.</span>
             <span>WEB DEVELOPER</span>
+
         </a>
+
+        <!-- DIREITOS AUTORAIS -->
 
         <p>
             © <span id="year"></span>
             Desenvolvedor Web Freelancer.
         </p>
 
-        <a href="#inicio">
-            Voltar ao início ↑
-        </a>
+        <!-- REDES SOCIAIS E NAVEGAÇÃO -->
+
+        <div class="footer-actions">
+
+            <!-- INSTAGRAM -->
+
+            <a
+                href="https://www.instagram.com/devweb.ro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-instagram"
+                aria-label="Instagram da DevWeb"
+                title="Conheça nosso Instagram"
+            >
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                >
+
+                    <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4"
+                    />
+
+                    <circle
+                        cx="17.5"
+                        cy="6.5"
+                        r="1"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+
+                </svg>
+
+            </a>
+
+            <!-- VOLTAR AO INÍCIO -->
+
+            <a
+                href="#inicio"
+                class="footer-back"
+            >
+                Voltar ao início ↑
+            </a>
+
+        </div>
 
     </footer>
 
+    <!-- ==========================================
+         SCRIPTS
+    ========================================== -->
+
     <script src="script.js"></script>
+    <script src="personalizador.js" defer></script>
 
 </body>
 </html>

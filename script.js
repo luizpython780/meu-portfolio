@@ -1,62 +1,93 @@
 
-// MENU PARA CELULARES
+"use strict";
 
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav");
+/* ==========================================
+   DEVWEB - PORTFÓLIO PROFISSIONAL
 
-menuToggle.addEventListener("click", () => {
-    const aberto = nav.classList.toggle("active");
+   Funcionalidades:
+   - Menu responsivo
+   - Fechamento automático do menu
+   - Ano atualizado no rodapé
 
-    menuToggle.textContent = aberto ? "×" : "☰";
+   O WhatsApp e o e-mail são controlados
+   exclusivamente pelo personalizador.js.
+========================================== */
 
-    menuToggle.setAttribute("aria-expanded", aberto);
+document.addEventListener("DOMContentLoaded", () => {
 
-    menuToggle.setAttribute(
-        "aria-label",
-        aberto ? "Fechar menu" : "Abrir menu"
-    );
-});
+    // ======================================
+    // MENU PARA CELULARES
+    // ======================================
 
-// FECHAR MENU AO CLICAR EM UM LINK
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
 
-nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
+    function fecharMenu() {
+        if (!menuToggle || !nav) return;
+
         nav.classList.remove("active");
 
         menuToggle.textContent = "☰";
-        menuToggle.setAttribute("aria-expanded", "false");
-    });
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            "Abrir menu"
+        );
+    }
+
+    if (menuToggle && nav) {
+
+        menuToggle.addEventListener("click", () => {
+
+            const aberto = nav.classList.toggle("active");
+
+            menuToggle.textContent = aberto ? "×" : "☰";
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(aberto)
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                aberto ? "Fechar menu" : "Abrir menu"
+            );
+
+        });
+
+        // Fechar menu ao clicar em um link
+
+        nav.querySelectorAll("a").forEach((link) => {
+
+            link.addEventListener("click", fecharMenu);
+
+        });
+
+        // Fechar menu ao pressionar Escape
+
+        document.addEventListener("keydown", (evento) => {
+
+            if (evento.key === "Escape") {
+                fecharMenu();
+            }
+
+        });
+
+    }
+
+    // ======================================
+    // ANO AUTOMÁTICO NO RODAPÉ
+    // ======================================
+
+    const ano = document.getElementById("year");
+
+    if (ano) {
+        ano.textContent = new Date().getFullYear();
+    }
+
 });
-
-// ATUALIZAR ANO AUTOMATICAMENTE
-
-document.getElementById("year").textContent =
-    new Date().getFullYear();
-
-// WHATSAPP PROFISSIONAL
-
-// Coloque seu número com 55 + DDD + número.
-// Exemplo de formato: 5569999999999
-const numeroWhatsApp = "5569993210765";
-
-const mensagemWhatsApp =
-    "Olá! Vi seu portfólio e gostaria de conversar sobre a criação de um site.";
-
-const linkWhatsApp =
-    "https://wa.me/" +
-    numeroWhatsApp +
-    "?text=" +
-    encodeURIComponent(mensagemWhatsApp);
-
-const botaoWhatsApp = document.getElementById("botao-whatsapp");
-
-if (botaoWhatsApp) {
-    botaoWhatsApp.addEventListener("click", function(event) {
-        if (!numeroWhatsApp) {
-            event.preventDefault();
-            alert("Configure seu número de WhatsApp no arquivo script.js.");
-        } else {
-            botaoWhatsApp.href = linkWhatsApp;
-        }
-    });
-}
